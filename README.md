@@ -5,12 +5,11 @@ A modern, responsive portfolio website for an interior designer, built with Reac
 ---
 ## Features
 
-- **Hero Section:** Eye-catching introduction with a call-to-action to view the portfolio.
-- **About Section:** Designer’s biography and photo.
-- **Portfolio:** Grid display of completed projects with images and descriptions.
-- **Testimonials:** Real client feedback with names, roles, and photos.
-- **Contact Form:** Allows visitors to send messages directly; displays a thank-you alert on submission.
-- **Responsive Design:** Looks great on all devices.
+- Clean, modern UI tailored for creative professionals
+- Modular React component architecture for easy maintenance and scalability
+- Optimized for fast loading and smooth user experience
+- Fully responsive layout for all device sizes
+- Simple configuration and easy content customization
 
 ---
 ## Getting Started
