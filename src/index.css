@@ -1,0 +1,371 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  background: #f8fafc;
+  color: #333;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero Section */
+.hero-modern {
+  position: relative;
+  min-height: 70vh;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 62, 80, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background: #61dafb;
+  color: #2c3e50;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.hero-btn:hover {
+  background: #21a1f3;
+  color: #fff;
+}
+
+/* About Section */
+.about-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #f8fafc;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  max-width: 500px;
+  padding: 2.5rem 2rem;
+  gap: 1.5rem;
+}
+
+.about-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #61dafb;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.12);
+  background: #e0e7ef;
+}
+
+.about-info h2 {
+  margin-bottom: 0.7rem;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about-info p {
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* Portfolio Section */
+.portfolio-modern {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.portfolio-grid-modern {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+}
+
+.portfolio-card img,
+.portfolio.img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card-body {
+  padding: 1.5rem;
+}
+
+.portfolio-card-body h3 {
+  margin: 0 0 0.7rem 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.portfolio-card-body p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Testimonials Section */
+.testimonials-modern {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+}
+
+.testimonial-avatar, .testimonial-avtar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #61dafb;
+  background: #e0e7ef;
+}
+
+blockquote {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+cite {
+  color: #555;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+/* contactForm code */
+
+ /*.contact-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  min-height: 80vh; /* Ensures vertical centering 
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #d1d5db;
+  font-size: 1rem;
+  background: #f4f8fb;
+  transition: border 0.2s;
+  margin-bottom: 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid #61dafb;
+  outline: none;
+  background: #fff;
+}
+
+.contact-btn {
+  width: 100%;
+  background: #61dafb;
+  color: #2c3e50;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+}
+
+.contact-btn:hover {
+  background: #21a1f3;
+  color: #fff;
+}
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+.contact-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; /* Add this */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 340px; /* Add this to prevent overflow */
+  margin: 0 auto;    /* Center the form inside the card */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center; /* Center children horizontally */
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 320px; /* Prevents overflow */
+  box-sizing: border-box; /* Ensures padding/border are included in width */
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #d1d5db;
+  font-size: 1rem;
+  background: #f4f8fb;
+  transition: border 0.2s;
+  margin-bottom: 0;
+  display: block;
+}
+
+.contact-btn {
+  width: 100%;
+  max-width: 320px; /* Match input width */
+  margin: 0 auto;
+}
+
+/* ...existing code... */
